@@ -24,7 +24,7 @@ def get_methods():
     return jsonpickle.encode(methods, unpicklable=False)
 
 
-CONTAINER = 'https://my.1password.com/vaults/rllzgcg4nk5j3axeoedj3vvnku/allitems/'
+CONTAINER = 'https://it-agile.1password.eu/vaults/v2edm55d3ohyurvf5psbe6i7de/allitems'
 
 if __name__ == '__main__':
     remote_app.run(host=os.getenv('REMOTE_SERVICE_HOST', '0.0.0.0'),
