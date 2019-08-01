@@ -19,7 +19,8 @@ remote_app = Flask(__name__)
 def get_methods():
     methods = (RemoteMethod('Google', 'https://meet.google.com/upv-baht-nyt'),
                RemoteMethod('Zoom', 'https://zoom.us/j/6787719716', CONTAINER + 'pm6ih2vwgk5emkg2zixymbw24u'),
-               RemoteMethod('Talkyoo', 'tel:+494095063183', CONTAINER + 'scvbg54alztpayy5kttbohu3vu'))
+               RemoteMethod('Talkyoo', '+494095063183', CONTAINER + 'scvbg54alztpayy5kttbohu3vu'),
+               RemoteMethod('Satellite', '+4915678599302', CONTAINER + 'rxzgnk3nmhbalnq57aikrdt3eu'))
     return jsonpickle.encode(methods, unpicklable=False)
 
 
