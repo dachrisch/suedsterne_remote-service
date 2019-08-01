@@ -19,7 +19,7 @@ class TestRemotesApi(TestCase):
     def test_methods_as_json(self):
         response = self.app.get('/remotes/api/v1.0/methods').data
         methods = jsonpickle.decode(response)
-        self.assertEqual(3, len(methods))
+        self.assertEqual(4, len(methods))
         self.assertIn('name', methods[0].keys())
         self.assertIn('remote', methods[0].keys())
         self.assertIn('login', methods[0].keys())
